@@ -30,21 +30,21 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
-          haxelib install hxcpp > nul
-          haxelib install lime 8.0.0
+          haxelib install hxcpp
+          haxelib install lime 7.9.0
           haxelib install openfl
-          haxelib install flixel 4.11.0
+          haxelib install flixel 5.2.1
           haxelib run lime setup flixel
-          haxelib run lime setup         
+          haxelib run lime setup
           haxelib remove flixel-addons
           haxelib remove flixel-tools
           haxelib remove flixel-ui
           haxelib install flixel-tools
           haxelib install flixel-ui
-          haxelib install flixel-addons 2.9.0
+          haxelib install flixel-addons 3.0.2
           haxelib install tjson
           haxelib install hxjsonast
-          haxelib install hxCodec       
+          haxelib install hxCodec 2.6.1  
           haxelib install linc_luajit
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
